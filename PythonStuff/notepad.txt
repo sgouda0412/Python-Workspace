@@ -1,0 +1,2 @@
+https://sinanartun.medium.com/how-to-setup-jupyter-notebook-on-google-cloud-platform-42751e585fc7
+

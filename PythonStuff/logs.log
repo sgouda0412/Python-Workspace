@@ -1,0 +1,10 @@
+2024-07-22 10:22:15.491 | DEBUG    | __main__:<module>:6 - This is a debug message
+2024-07-22 10:22:15.492 | INFO     | __main__:<module>:7 - This is an info message
+2024-07-22 10:22:15.493 | WARNING  | __main__:<module>:8 - This is a warning message
+2024-07-22 10:22:15.493 | ERROR    | __main__:<module>:9 - This is an error message
+2024-07-22 10:24:28.488 | DEBUG    | __main__:<module>:6 - This is a debug message
+2024-07-22 10:24:28.489 | INFO     | __main__:<module>:7 - This is an info message
+2024-07-22 10:24:28.490 | WARNING  | __main__:<module>:8 - This is a warning message
+2024-07-22 10:24:28.490 | ERROR    | __main__:<module>:9 - This is an error message
+2024-07-22 10:24:28.494 | INFO     | custom_functions:greet:5 - Called greet
+2024-07-22 10:24:28.500 | SUCCESS  | __main__:<module>:18 - Successfully terminated
