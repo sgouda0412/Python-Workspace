@@ -193,11 +193,13 @@ def fib(n: int) -> Generator:
 
 from typing import Optional, Dict
 
+
 def find_person(people: Dict[str, str], person_id: str) -> Optional[str]:
     return people.get(person_id)
 
 
 from typing import Set
+
 
 def process_tags(tags: Set[str]) -> None:
     for tag in tags:
@@ -206,8 +208,71 @@ def process_tags(tags: Set[str]) -> None:
 
 # custom types type hints
 
-tcp_dict =  dict[str, list[str]]
+tcp_dict = dict[str, list[str]]
 my_dict: tcp_dict = {
     "Main_Server": ["123", "santosh"],
     "Other_Server": ["1234", "santosh1"],
 }
+
+
+from typing import Final
+
+api_url: Final = "https://example.com/m_api"
+
+# ... some other code
+
+api_url = "something else"  # Error: Cannot assign to final name "api_url"
+
+from typing import NoReturn
+
+
+def raise_exception(exc: Exception) -> NoReturn:
+    print("An exception is about to be raised")
+    raise exc
+
+
+raise_exception(ValueError("Test"))
+
+
+from typing import NamedTuple
+
+
+class Person(NamedTuple):
+    name: str
+    age: int
+    bio: str
+
+
+ishan = Person("Ishan", 31, "Writer")
+
+print(ishan)  # Person(name='Ishan', age=31, bio='Writer')
+print(ishan[1])  # 31
+print(ishan.bio)  # Writer
+
+reveal_type(ishan)  # Revealed type is Tuple[str, int, str]
+
+
+# ========================================================================================
+
+from time import time, sleep
+from typing import Callable
+
+
+def time_it(func: Callable[[], int]) -> Callable[[], int]:
+    def wrapper() -> int:
+        start_time = time()
+        func()
+        end_time = time()
+        duration = end_time - start_time
+        print(f"function took {duration:.2f} seconds to run")
+
+    return wrapper
+
+
+@time_it
+def long_computation() -> int:
+    sleep(2)
+    return 42
+
+
+long_computation()
