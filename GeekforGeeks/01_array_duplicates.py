@@ -1,8 +1,19 @@
 from typing import List
 from collections import defaultdict, ChainMap, UserDict, UserString
+from itertools import (
+    combinations_with_replacement,
+    chain,
+    accumulate,
+    combinations,
+    compress,
+    count,
+    cycle,
+    zip_longest,
+)
 
 
 class Solution:
+
     def duplicates(self, n: int, arr: List[int]) -> List[int]:
         l = []
         for i in range(len(arr)):
