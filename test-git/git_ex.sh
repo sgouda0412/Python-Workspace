@@ -1,25 +1,37 @@
 #!/bin/bash
 
-# Check Git Status
+# Check Git status
 echo "Checking Git status..."
 git status
 
-# Stage Changes
+# Stage all changes
 echo "Staging changes..."
 git add .
 
-# Commit Changes
-read -p "Enter commit message: " commit_message
+# Commit changes
+commit_message="commit"
+echo "Committing changes with message: $commit_message"
 git commit -m "$commit_message"
 
-# Push to Branch
-read -p "Enter branch name to push to: " branch_name
-git push origin "$branch_name"
+# Push changes to the 'features' branch
+features_branch="features"
+echo "Pushing changes to the branch: $features_branch"
+git push origin "$features_branch"
 
-# Merge Branch
-read -p "Enter branch name to merge: " merge_branch_name
-git checkout main  # or the target branch
+# Checkout main branch
+echo "Checking out main branch..."
+git checkout main
+
+# Pull the latest changes from the main branch
+echo "Pulling the latest changes from main branch..."
 git pull origin main
-git merge "$merge_branch_name"
 
-echo "Done!"
+# Merge the 'features' branch into the main branch
+echo "Merging branch '$features_branch' into main..."
+git merge "$features_branch"
+
+# Push the updated main branch to the remote repository
+echo "Pushing the updated main branch to the remote repository..."
+git push origin main
+
+echo "All operations completed successfully."
