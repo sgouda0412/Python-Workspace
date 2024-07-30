@@ -44,3 +44,21 @@ spark = (
 # Monothilic Apporach -> one big system , which handle storage and processing -> increase hardware
 # vertical scalling , expensive
 # Distributed Apprach  ->
+
+
+# Hadoop Vs Spark Misconception
+# Hadoop is a Database, Spark is 100 times faster than hadoop, Spark process data on Ram/Memory but Hadoop dont
+# Hadoop Vs Spark -> difference
+# slower, write and read data from disk to in memory | do all the computation in memory
+# Hadoop works on Map reduce Paradigm
+# Hadoop -> batch processing | Spark -> batch and streaming Processing
+# difficult to write code in Hadoop | easy to wite [low + high level API]
+# kerberous authentication | doesn't have a solid security feautures[HDFS - ACL, YARN - Kerberos]
+#  fault tolerant | fault tolerant
+
+
+# spark ecosystem
+# run on above spark core -> DF, Spark SQL [DF, Dataset]
+# spark writtern in Scala -> RDD
+# doesnot have cluster manager [ Name ] [YARM, Mesos, Kubernetes, Standalone]
+#
