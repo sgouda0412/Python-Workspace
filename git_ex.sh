@@ -35,3 +35,6 @@ echo "Pushing the updated main branch to the remote repository..."
 git push origin main
 
 echo "All operations completed successfully."
+
+echo "checking out to feautures branch"
+git checkout "$features_branch"
