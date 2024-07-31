@@ -1,3 +1,4 @@
+#[30-7-24]
 #!/usr/bin/env bash
 #[30-07-24] ===========================================================================================
 echo "Hello Bash Programming ......"
@@ -59,3 +60,8 @@ echo "Files in current folder:"
 for file in $(pwd)/*; do
     echo $file
 done
+
+read -p "Enter Number: " a
+echo $a
+
+#[]
