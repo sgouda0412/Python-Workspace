@@ -66,11 +66,14 @@ for file in $(pwd)/*; do
     echo $file
 done
 
-read -p "Enter Number: " a
-echo $a
+Welcome() {
+    echo "Welcome to Linux Lessons $1 $2 $3"
+    return 3
+}
+Welcome Joe Matt Timothy
+echo $?
 
-set -euo pipefail
-
-case
-#===================================================================================
-#[1-08-24]
+# Welcome() {
+#     echo "Welcome to Linux Lessons $1 $2 $3"
+# }
+# Welcome Joe Matt Timothy
