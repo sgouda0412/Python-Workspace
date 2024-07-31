@@ -1,5 +1,5 @@
-#[30-7-24]
 #!/usr/bin/env bash
+
 #[30-07-24] ===========================================================================================
 echo "Hello Bash Programming ......"
 function sendmail() {
@@ -26,6 +26,8 @@ echo "$BASH_VERSION"
 # done
 #========================================================================================================
 #[31-07-24]
+
+#while loops
 number=1
 
 while [[ $number -le 10 ]]; do
@@ -34,6 +36,7 @@ while [[ $number -le 10 ]]; do
 done
 echo "Now, number is $number"
 
+#until loops
 number=1
 until [[ $number -ge 10 ]]; do
     echo "$number"
@@ -41,6 +44,7 @@ until [[ $number -ge 10 ]]; do
 done
 echo "Now, number is $number"
 
+# arrays
 devops_tools=("docker" "kubernetes" "ansible" "terraform" "jenkins")
 # shellcheck disable=SC2068
 for tool in ${devops_tools[@]}; do
@@ -48,6 +52,7 @@ for tool in ${devops_tools[@]}; do
     echo $tool
 done
 
+#for loops
 echo "Numbers:"
 for number in 0 1 2 3 4 5 6 7 8 9; do
     echo $number
@@ -64,4 +69,8 @@ done
 read -p "Enter Number: " a
 echo $a
 
-#[]
+set -euo pipefail
+
+case
+#===================================================================================
+#[1-08-24]
