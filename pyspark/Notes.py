@@ -65,3 +65,26 @@ spark = (
 
 #df.createOrReplaceTempView("my_table")
 
+#spark architecture
+# cluster -> multiple computer connected through networks
+# works based on master slave architecture
+# yarn is installed in master -> also called as resources manager
+# Node manager - > worker nodes
+
+# spark submit-> spark code goes to resources manager, config-> driver , executer, no of executor , cpu core
+# yet another resources nagotiator
+# Application master
+
+#transformation and Actions
+# Tranformation :-> Anything done on data for processing [Eg:-> select, filter, join , groupby]
+# Actions :-> .show(), .count(),.collect(), run one after one 
+# lazy evaluation only work after calling actions
+
+# type of transformation
+# Narrow :  doesn't require data movement between partitions eg: filter select union map
+# wide : avoid it , because data shuffling happens
+# wide : groupby, expensive task data shuffling , join, distinct, etc
+
+
+
+

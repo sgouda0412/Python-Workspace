@@ -99,18 +99,25 @@ finally:
 def add(num1, num2):
     try:
         if isinstance(num1, int) and isinstance(num2, int):
-            return num1 + num2
-        else:
-            raise Exception("Only int value are allowed")
-    # except TypeError:
+            print(num1 + num2)
+
+    #     else:
+    #         raise Exception(
+    #             "Only int value are allowed"
+    #         )  # [update raise own custom exceptions]
+    # # except TypeError:
     #     return ("Invalid Number")
     # except NameError:  # inbuilt exceptions
     #     return("Invalid parameter")
     except Exception as e:  # always provides the base exception at the last
         return e
-
+    else:
+        print("successfully executed....")
+#  if try block doesnot caused an exception it will go to else block 
+    finally:
+        print("finally blocked always executed....")
 
 print(add(12, 12))
-print(add("a", "b"))
-print(add(7, "a"))
+# print(add("a", "b"))
+# print(add(7, "a"))
 print("Execution completed............")
