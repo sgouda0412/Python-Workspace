@@ -11,7 +11,7 @@ spark = (
     .config("")
     .getOrCreate()
 )
-
+#df.createDataframe(data, schema = schema)
 # check .config("")
 # spark.newSession
 # spark.SparkContext
@@ -62,3 +62,6 @@ spark = (
 # spark writtern in Scala -> RDD
 # doesnot have cluster manager [ Name ] [YARM, Mesos, Kubernetes, Standalone]
 #
+
+#df.createOrReplaceTempView("my_table")
+
