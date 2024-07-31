@@ -59,3 +59,15 @@ echo "Files in current folder:"
 for file in $(pwd)/*; do
     echo $file
 done
+
+Welcome() {
+    echo "Welcome to Linux Lessons $1 $2 $3"
+    return 3
+}
+Welcome Joe Matt Timothy
+echo $?
+
+# Welcome() {
+#     echo "Welcome to Linux Lessons $1 $2 $3"
+# }
+# Welcome Joe Matt Timothy
