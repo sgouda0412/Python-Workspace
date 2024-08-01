@@ -303,3 +303,32 @@ def python2_thinking():
     keys = d.keys()
     del d["a"]
     print("a" in keys)  # keys is a "view", not a copy
+
+
+# defining a tuple
+coordinates = (1, ) #type tuple
+
+# is vs ==
+x = 100
+y = 100
+
+print(id(x))
+print(id(y))
+
+print(x == y)
+print(x is y)
+
+# is check the memory address
+# == check the value if its equal or not
+#prefer using ==
+
+
+def func() -> None:
+    print("This called is from my_module")
+
+func()
+
+# always use 
+#if __name__ == "__main__":
+#   pass
+
