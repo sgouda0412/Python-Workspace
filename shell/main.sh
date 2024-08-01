@@ -77,3 +77,26 @@ echo $?
 #     echo "Welcome to Linux Lessons $1 $2 $3"
 # }
 # Welcome Joe Matt Timothy
+
+# Declare an associative array
+declare -A STAR_PLAYERS
+
+# Add elements to the associative array
+STAR_PLAYERS[Argentina]="Messi"
+STAR_PLAYERS[Brazil]="Neymar"
+STAR_PLAYERS[England]="Kane"
+
+# Print the value of a specific key
+echo "${STAR_PLAYERS[Argentina]}" # Outputs: Messi
+
+
+# Notes , All Varuables should be in ALLCAPS, it shouldn't have any special character except underscore ( _ ) to improve readability
+# Always avoid using the function keyword, it reduces compatibility with older versions of bash.
+
+# 
+# #!/usr/bin/env bash
+
+# set -o errexit
+# set -o pipefail
+
+# readonly something='immutable value'

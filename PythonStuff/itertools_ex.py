@@ -22,3 +22,16 @@ print(a)
 # Initialize 2D empty array with 3 rows and 4 columns filled with 0's
 b = [list(itertools.repeat(0, 4)) for i in range(3)]
 print(b)
+
+
+from itertools import islice
+
+
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+
+print(list(islice(fibonacci(50), 20)))

@@ -1,5 +1,5 @@
 # https://medium.com/gitconnected/python-lists-the-ultimate-guide-496779c4b3fb
-
+ import threading
 x = [1, 2, 3, 4, 5, 6]
 for i in reversed(x):
     print(i)

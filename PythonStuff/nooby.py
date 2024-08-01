@@ -320,7 +320,7 @@ print(x is y)
 
 # is check the memory address
 # == check the value if its equal or not
-#prefer using ==
+# prefer using ==
 
 
 def func() -> None:
@@ -328,7 +328,14 @@ def func() -> None:
 
 func()
 
-# always use 
-#if __name__ == "__main__":
+# always use
+# if __name__ == "__main__":
 #   pass
 
+
+# handling list default value 
+def append_to_list(value, my_list=None):
+    if my_list is None:
+        my_list = []
+    my_list.append(value)
+    return my_list

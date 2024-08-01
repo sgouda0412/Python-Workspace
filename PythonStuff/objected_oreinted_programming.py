@@ -39,8 +39,6 @@ from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
-    def __init__(self, name: str) -> None:
-        self.name = name
 
     @abstractmethod
     def sound(self) -> None: ...
