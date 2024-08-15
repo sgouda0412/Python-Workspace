@@ -1,0 +1,88 @@
+{
+  "workbench.colorTheme": "Cobalt2",
+  "editor.fontFamily": "Cascadia Code",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "workbench.iconTheme": "vscode-icons-mac",
+  "extensions.ignoreRecommendations": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "notebook.formatOnSave.enabled": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.settings.applyToAllProfiles": [
+  
+  
+  ],
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/sgouda/Documents/custom.css"
+  ],
+  "vscode_custom_css.policy": true, 
+"workbench.colorCustomizations": {
+    "terminal.background": "#193549",
+    "terminal.foreground": "#ffffff",
+    "terminalCursor.background": "#ffcc00",
+    "terminalCursor.foreground": "#ffcc00",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#75a5b0",
+    "terminal.ansiBrightBlack": "#666666",
+    "terminal.ansiBrightBlue": "#75a5b0",
+    "terminal.ansiBrightCyan": "#a3babf",
+    "terminal.ansiBrightGreen": "#d0e7a3",
+    "terminal.ansiBrightMagenta": "#d4bfff",
+    "terminal.ansiBrightRed": "#ff8888",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#ffcc66",
+    "terminal.ansiCyan": "#7195a8",
+    "terminal.ansiGreen": "#99c794",
+    "terminal.ansiMagenta": "#d4bfff",
+    "terminal.ansiRed": "#ec7279",
+    "terminal.ansiWhite": "#ffffff",
+    "terminal.ansiYellow": "#fac863",
+    "sideBar.background": "#193549",
+    "sideBar.foreground": "#d4d7d6",
+    "sideBarSectionHeader.background": "#202e3a",
+    "sideBarSectionHeader.foreground": "#ffffff",
+    "sideBarTitle.foreground": "#d4d7d6",
+    "list.activeSelectionBackground": "#004a73",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.inactiveSelectionBackground": "#002b36",
+    "list.inactiveSelectionForeground": "#d4d7d6",
+    "list.hoverBackground": "#003c57",
+    "list.hoverForeground": "#ffffff",
+    "list.focusBackground": "#004a73",
+    "list.focusForeground": "#ffffff",
+    "list.highlightForeground": "#ffc600",
+    "activityBar.background": "#193549",
+    "activityBar.foreground": "#d4d7d6",
+    "activityBarBadge.background": "#ffc600",
+    "activityBarBadge.foreground": "#193549",
+    "activityBar.activeBorder": "#ffc600",
+    "sideBar.border": "#002b36",
+    "editorGroup.border": "#193549"
+  },
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportMissingModuleSource": "none",
+  },
+  "editor.fontSize": 13,
+  "workbench.startupEditor": "none",
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyArgs": [
+    "--ignore-missing-imports",
+    "--follow-imports=silent",
+    "--show-column-numbers",
+    "--strict"
+  ],
+  "diffEditor.renderSideBySide": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "editor.rulers": [
+    {
+      "column": 160,
+      "color" : "#1b81a8"
+    }
+  ],
+}
