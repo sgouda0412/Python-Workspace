@@ -64,3 +64,8 @@ cat: Cat = Cat("Bili")
 cat.sound()
 cat.move()
 print(cat.name)
+
+
+class Samyoed:
+    def __init__(self) -> None:
+        pass

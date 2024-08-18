@@ -28,10 +28,26 @@
 # data ingestion data loading web scrapping task used by data engineer
 # https://www.arecadata.com/i-have-to-execute-a-function-in-parallel/
 
-#inside module there can be functions and class, Variable
+# inside module there can be functions and class, Variable
 import multiprocessing  # its a module
 import threading
 import asyncio
+from multiprocessing import Queue, Pool, Pipe
+from itertools import (
+    accumulate,
+    chain,
+    combinations,
+    combinations_with_replacement,
+    compress,
+    count,
+    cycle,
+    filterfalse,
+    repeat,
+    pairwise,
+    permutations,
+    product,
+)
+
 
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing.pool import Pool
@@ -49,6 +65,19 @@ from collections import (
     UserString,
     Counter,
 )
+
+from collections import (
+    UserDict,
+    UserList,
+    UserString,
+    Counter,
+    ChainMap,
+    namedtuple,
+    defaultdict,
+    deque,
+    OrderedDict,
+)
+
 
 print("Hello Asyncio......")
 
