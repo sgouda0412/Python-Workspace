@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: cp1252 -*-
+
+
 from collections import deque, defaultdict, Counter
 
 d = deque([1, 2, 3, 4, 5], maxlen= 10)
@@ -94,3 +98,63 @@ print(r)
 
 r = [j for x in vec for j in x]
 print(r)
+
+import heapq
+
+a = [52, 94, 13, 77, 41]
+heapq.heapify(a)
+
+print(a)
+
+heapq.heappush(a, 19)
+print(a)
+
+heapq.heappushpop(a, 14)
+print(a)
+
+x = heapq.nlargest(3, a)
+print(x)
+
+words = ["apple", "banana", "cherry", "date"]
+longest_words = heapq.nlargest(2, words, key=len)
+print(longest_words)
+
+a, b = 0, 1
+while a < 10:
+    print(a, end=',')
+    a, b = b, a + b
+print()
+users = {'Hans': 'active', 'Sams':'inactive', 'Cats': 'active'}
+
+active_users = {}
+for k, v in users.items():
+    if v == 'active':
+        active_users[k] = v
+print(active_users)
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(f"{n} equals {x} * {n // x}")
+            break
+print("All you going to executed......")
+
+from enum import Enum
+class Color(Enum):
+    RED = 'red'
+    GREEN = 'green'
+    BLUE = 'blue'
+try:
+    color =  Color(input("Enter the choice of color: "))
+    match color:
+        case Color.RED:
+            print("i see red")
+        case Color.GREEN:
+            print("i see green")
+        case Color.BLUE:
+            print("i see blue")
+        case _:
+            print("i see no color")
+except ValueError:
+    print("Invalid color choice...")
+
