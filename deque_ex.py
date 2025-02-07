@@ -158,3 +158,34 @@ try:
 except ValueError:
     print("Invalid color choice...")
 
+args = [3, 6]
+print(list(range(*args)))
+
+import os
+import sys
+
+a = [1, 2, 3, 4, 5, 6, 7, 8]
+del a[0]
+print(a)
+
+del a[2:5]
+print(a)
+
+
+v = ([1,2, 3],[3, 2, 1])
+#v[0] = [1, 2]
+print(v)
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+
+for q, a in zip(questions, answers):
+    print('What is your {0}. it is {1}.'.format(q,a))
+
+for i in reversed(range(1, 10, 2)):  # sequence should be in forward direction
+    print(i)
+
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for i in sorted(basket): # Sorted Squence Order
+    print(i)
+
+
