@@ -1,6 +1,36 @@
-.explorer-viewlet { 
-  font-family: "Comic Mono"; 
+/* Main editor */
+.monaco-editor {
+    font-family: "Iosevka" !important;
+    font-size: 14px !important;
 }
+
+/* Explorer and Sidebar */
+.explorer-viewlet {
+    font-family: "Iosevka" !important;
+    font-size: 13px !important;
+}
+
+/* Tab styling */
 .tab-label {
+    font-family: "Iosevka" !important;
     font-weight: bold !important;
+    font-size: 13px !important;
+}
+/* Status bar */
+.monaco-workbench .part.statusbar {
+    font-family: "Iosevka" !important;
+    font-size: 12px !important;
+    line-height: 22px !important;
+}
+/* Menu bar */
+.menubar-menu-button,
+.monaco-workbench .part.titlebar .window-title {
+    font-family: "Iosevka" !important;
+    font-size: 13px !important;
+}
+
+/* Menu items */
+.monaco-menu .monaco-action-bar.vertical .action-item {
+    font-family: "Iosevka" !important;
+    font-size: 13px !important;
 }
