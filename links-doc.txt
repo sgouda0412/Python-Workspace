@@ -1,0 +1,16 @@
+https://www.geeksforgeeks.org/python-crash-course/?ref=header_ind
+
+https://www.geeksforgeeks.org/advanced-python-tutorials/
+
+https://www.geeksforgeeks.org/python-data-structures-and-algorithms/?ref=asr6
+
+https://www.geeksforgeeks.org/pandas-tutorial/?ref=header_ind
+
+https://www.geeksforgeeks.org/numpy-tutorial/?ref=header_ind
+
+https://www.geeksforgeeks.org/sql-tutorial/?ref=dhm
+
+https://www.geeksforgeeks.org/bash-scripting-introduction-to-bash-and-bash-scripting/?ref=asr1
+
+https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/
+
